@@ -1,0 +1,17 @@
+{
+  "name": "movistar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "author": "Scotch",
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "angular-animate": "^1.5.5",
+    "angular-aria": "^1.5.5",
+    "express": "^4.13.4",
+    "method-override": "^2.1.3",
+    "mongoose": "^4.4.12",
+    "morgan": "^1.1.1",
+    "templates": "^0.24.2"
+  }
+}
