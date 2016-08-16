@@ -1,0 +1,17 @@
+CREATE DATABASE IF NOT EXISTS movistar;
+
+USE 'movistar';
+
+CREATE TABLE roles ( id INT NOT NULL AUTO_INCREMENT , 
+	name VARCHAR(100) NOT NULL ,
+	PRIMARY KEY (id)) ENGINE = InnoDB;
+
+
+CREATE TABLE users ( id INT NOT NULL AUTO_INCREMENT , 
+	email VARCHAR(100) NOT NULL , 
+	password VARCHAR(100) NOT NULL , 
+	role_id INT NOT NULL,
+	INDEX role_id (role_id),
+	FOREIGN KEY (role_id) 
+	REFERENCES roles(id),
+	PRIMARY KEY (id)) ENGINE = InnoDB;
