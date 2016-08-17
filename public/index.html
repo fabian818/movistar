@@ -1,1 +1,48 @@
-<h1>Aquí su code</h1>
+<html>
+  <head>
+    <title>Angular 2 y TypeScript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <!-- 1. Cargar librerias -->
+     <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. cargamos la Configuracion  SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+  <!-- 3. monitor de la apliación -->
+  <body>
+    <my-app>Cargando...</my-app>
+
+    <div class="container"> 
+        <img src="img/telefonica2.png">
+
+        <form>
+          
+        <div class="form-input">
+          <input type="text" name="username">
+
+        </div>
+        <div class="form-input">
+          <input type="password" name="password">
+
+        </div>
+
+
+
+        </form>
+
+        <input type="submit" name="submit" value="Login" class="btn-login">
+       <p><a href="#">ovlidé mi contraseña</a></p> 
+
+    </div>
+
+
+  </body>
+</html>
