@@ -11,7 +11,7 @@ var app = express();
 app.set('port', (process.env.PORT || 8080));
 app.use(express.static(__dirname + '/public'));
 
-app.use(bodyparser.urlencoded({extended: true}));
+app.use(bodyparser.urlencoded({extended: false}));
 app.use(bodyparser.json());
 
 connection.init();
@@ -21,6 +21,10 @@ app.use('/scripts', express.static(__dirname + '/node_modules/'));
 app.use(function(req, res) {
 	res.sendFile(__dirname + '/public/index.html');
 });
+
+// var data = "do shash'owania";
+// var crypto = require('crypto');
+// console.log(crypto.createHash('md5').update(data).digest("hex"));
 
 
 
