@@ -1,0 +1,49 @@
+body{
+	margin: 0 auto;
+	font-family:sans-serif;
+}
+header{
+	background: url("img/encabezado.jpg");
+	background-repeat:no-repeat;
+	background-size: 100%;
+	height: 64px;
+	padding: 0px;
+	
+}
+section{
+	background: url("img/fondo-filtros.jpg");
+	background-repeat:no-repeat;
+	background-size: 100%;
+	height: 126px;
+	padding: 0px;
+}
+.filtro{
+	border-radius: 5px;
+	width: 10%;
+	height: 25px;
+}
+.filtros{
+	padding-top: 2%;
+}
+.opcion{
+	padding-top: 2%;
+}
+.cabecera{
+	border: 1px;
+	border-color: black;
+	margin-left: 150px;
+	margin-right: 150px;
+	height: 64px;
+}
+.menu{
+	
+}
+.logo{
+	
+}
+.datosuser{
+
+}
+.botonsalir{
+
+}
