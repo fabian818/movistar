@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Angular 2 y TypeScript</title>
+    <title>Telefonica</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
@@ -10,6 +10,7 @@
     <script src="scripts/zone.js/dist/zone.js"></script>
     <script src="scripts/reflect-metadata/Reflect.js"></script>
     <script src="scripts/systemjs/dist/system.src.js"></script>
+    <script src="https://use.fontawesome.com/e8493065d9.js"></script>
     <!-- 2. cargamos la Configuracion  SystemJS -->
     <script src="systemjs.config.js"></script>
     <script>
@@ -18,14 +19,14 @@
   </head>
   <!-- 3. monitor de la apliación -->
   <body>
-    <my-app>Cargando...</my-app>
+    <my-app></my-app>
 
     <div class="container"> 
-        <img src="img/telefonica2.png">
+        <img src="img/logotipo.png">
 
         <form>
-          
         <div class="form-input">
+
           <input type="text" name="username">
 
         </div>
@@ -33,16 +34,11 @@
           <input type="password" name="password">
 
         </div>
-
-
-
         </form>
           
         <input type="submit" onclick=" location.href='construir.html'" name="submit" value="Login" class="btn-login">
        <p><a href="#">ovlidé mi contraseña</a></p> 
 
     </div>
-
-
   </body>
 </html>
